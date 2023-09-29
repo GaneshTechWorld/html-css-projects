@@ -1,0 +1,47 @@
+.container
+{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+.container button
+{   height: 100px;
+    width: 260px;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+
+    animation-name: ganu;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes ganu
+{
+      
+    0%
+    {
+     width: 32%;
+     background-color: aquamarine;
+    }
+    45%
+    {
+        width: 52%;
+        background-color: orange;
+    }
+    65%
+    {
+        width: 72%;
+     background-color: aquamarine;
+    }
+    45%
+    {
+        width: 92%;
+     background-color: orange;
+    }
+}

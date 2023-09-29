@@ -1,0 +1,106 @@
+/*
+.wrapper
+{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+}
+.navbar
+{
+      width: 1200px;
+       background-color: #3f3f3f3f; 
+      display: flex;
+      height: 100px;
+    
+      justify-content: space-around;
+      border: 2px solid ;
+      align-items: center;
+      margin: 0 auto;
+     }
+.section1
+{
+     display: flex;
+     align-items: center;    
+}
+
+.section2
+{
+     display: flex;   
+     align-items: center;
+     gap: 2rem;
+     text-decoration: none;
+}
+.logo
+{
+      height: 80px;
+      margin-right: -1rem;
+}
+a
+{
+     text-decoration: none;
+     font-size: larger;
+}
+
+.hero-section
+{
+     height: 600px;
+     width: 1200px;
+     background-color: #1f1f1f1f;
+     margin: 0 auto;
+     display: flex;
+      gap: 7rem;
+      justify-content:center; 
+      padding-top: 6rem;
+
+}
+.left-side
+{
+     height: 390px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+*/
+.btn
+{
+     margin:100px;
+     height: 100px;
+     width: 300px;
+
+    background-color: red;
+     /* width: fit-content;  */
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 7px 7px 7px 7px #0000003f;
+    font-size: 18px; 
+    cursor: pointer;
+    transition: all 0.5s; 
+    font-weight: 500; 
+    border:  solid 3px transparent;  
+     position: relative; 
+     z-index: 1;   
+}
+.btn::before
+{
+    content: "ujj";
+    position: absolute;  
+    background-color:white ;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;  
+     z-index: -1;  
+    transform: scaleX(0);
+    /* transform-origin: left; */
+    transition: all 0.8s;
+}
+
+.btn:hover::before
+{
+    transform: scaleX(1);
+}
+.btn:hover
+{
+    border: solid 3px red;
+    color: black;
+}
